@@ -1,2 +1,4 @@
 import "../CSS/style.css";
-console.log("hello");
+import { lecards } from "./product";
+
+lecards.forEach((lecard) => console.log(lecard.age));
