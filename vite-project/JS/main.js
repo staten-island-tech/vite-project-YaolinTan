@@ -1,4 +1,6 @@
 import "../CSS/style.css";
 import { lecards } from "./product";
+import { DOMselectors } from "./dom";
 
-lecards.forEach((lecard) => console.log(lecard.age));
+console.log(DOMselectors);
+console.log(lecards);

@@ -1,6 +1,7 @@
 @import "variable.css";
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
+
 html,
 body,
 *{
@@ -16,5 +17,16 @@ h1{
   font-size: var(--h1);
   text-align: center;
   font-family: cursive;
-  
+}
+h2{
+  font-family: ;
+}
+.button{
+  height: 6rem;
+  width: 12rem;
+}
+.allButton{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }

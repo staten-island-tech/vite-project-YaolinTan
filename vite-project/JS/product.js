@@ -156,4 +156,4 @@ const lecards = [
   },
 ];
 
-//need to export
+export { lecards };
