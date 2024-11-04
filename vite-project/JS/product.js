@@ -1,7 +1,7 @@
 const lecards = [
   // LeBron James Cards
   {
-    player: "LeBron James",
+    name: "LeBron James",
     year: 2003,
     brand: "Upper Deck Exquisite",
     stats: { points: 27, rebounds: 7.4, assists: 7.2 },
@@ -11,7 +11,7 @@ const lecards = [
     draftYear: 2003,
   },
   {
-    player: "LeBron James",
+    name: "LeBron James",
     year: 2010,
     brand: "Panini National Treasures",
     stats: { points: 29.7, rebounds: 7.3, assists: 8.6 },
@@ -21,7 +21,7 @@ const lecards = [
     draftYear: 2003,
   },
   {
-    player: "LeBron James",
+    name: "LeBron James",
     year: 2012,
     brand: "Panini Prizm",
     stats: { points: 30, rebounds: 8.2, assists: 6.2 },
@@ -31,7 +31,7 @@ const lecards = [
     draftYear: 2003,
   },
   {
-    player: "LeBron James",
+    name: "LeBron James",
     year: 2018,
     brand: "Panini Chronicles",
     stats: { points: 27.5, rebounds: 8.6, assists: 9.1 },
@@ -41,7 +41,7 @@ const lecards = [
     draftYear: 2003,
   },
   {
-    player: "LeBron James",
+    name: "LeBron James",
     year: 2020,
     brand: "Donruss Optic",
     stats: { points: 25.0, rebounds: 7.7, assists: 10.2 },
@@ -53,7 +53,7 @@ const lecards = [
 
   // Bronny James Cards
   {
-    player: "Bronny James",
+    name: "Bronny James",
     year: 2020,
     brand: "Panini Prizm High School",
     stats: { points: 15, rebounds: 5, assists: 4 },
@@ -63,7 +63,7 @@ const lecards = [
     draftYear: null, // Not drafted yet
   },
   {
-    player: "Bronny James",
+    name: "Bronny James",
     year: 2021,
     brand: "Topps Chrome",
     stats: { points: 18, rebounds: 4, assists: 5 },
@@ -73,7 +73,7 @@ const lecards = [
     draftYear: null, // Not drafted yet
   },
   {
-    player: "Bronny James",
+    name: "Bronny James",
     year: 2022,
     brand: "Upper Deck",
     stats: { points: 20, rebounds: 6, assists: 6 },
@@ -83,7 +83,7 @@ const lecards = [
     draftYear: null, // Not drafted yet
   },
   {
-    player: "Bronny James",
+    name: "Bronny James",
     year: 2023,
     brand: "Leaf Pro Set",
     stats: { points: 22, rebounds: 5, assists: 7 },
@@ -93,7 +93,7 @@ const lecards = [
     draftYear: null, // Not drafted yet
   },
   {
-    player: "Bronny James",
+    name: "Bronny James",
     year: 2023,
     brand: "Panini Hoops",
     stats: { points: 21, rebounds: 5, assists: 6 },
@@ -105,7 +105,7 @@ const lecards = [
 
   // Bryce James Cards
   {
-    player: "Bryce James",
+    name: "Bryce James",
     year: 2021,
     brand: "Panini Prizm High School",
     stats: { points: 14, rebounds: 4, assists: 3 },
@@ -115,7 +115,7 @@ const lecards = [
     draftYear: null, // Not drafted yet
   },
   {
-    player: "Bryce James",
+    name: "Bryce James",
     year: 2022,
     brand: "Topps Chrome",
     stats: { points: 16, rebounds: 5, assists: 4 },
@@ -125,7 +125,7 @@ const lecards = [
     draftYear: null, // Not drafted yet
   },
   {
-    player: "Bryce James",
+    name: "Bryce James",
     year: 2023,
     brand: "Upper Deck",
     stats: { points: 18, rebounds: 6, assists: 5 },
@@ -135,7 +135,7 @@ const lecards = [
     draftYear: null, // Not drafted yet
   },
   {
-    player: "Bryce James",
+    name: "Bryce James",
     year: 2023,
     brand: "Leaf Pro Set",
     stats: { points: 19, rebounds: 5, assists: 6 },
@@ -145,7 +145,7 @@ const lecards = [
     draftYear: null, // Not drafted yet
   },
   {
-    player: "Bryce James",
+    name: "Bryce James",
     year: 2023,
     brand: "Panini Hoops",
     stats: { points: 20, rebounds: 7, assists: 7 },
