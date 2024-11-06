@@ -1,6 +1,6 @@
 @import "variable.css";
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-
+@import ""
 
 html,
 body,
@@ -29,4 +29,9 @@ h2{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.card-container{
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
