@@ -1,6 +1,5 @@
 @import "variable.css";
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-@import ""
 
 html,
 body,
@@ -22,8 +21,8 @@ h2{
   font-family: ;
 }
 .button{
-  height: 6rem;
-  width: 12rem;
+  height: var(--buttonHeight);
+  width: var(--buttonWidth);
 }
 .allButton{
   display: flex;
@@ -31,7 +30,7 @@ h2{
   justify-content: space-around;
 }
 .card-container{
-  margin-top: 5rem;
+  margin-top: var(--containerMarginTop);
   display: flex;
   flex-wrap: wrap;
 }

@@ -1,8 +1,10 @@
 import "../CSS/style.css";
 import { lecards } from "./product";
 import { DOMselectors } from "./dom";
+
 DOMselectors.lebronButton.addEventListener("click", function (event) {
   event.preventDefault();
+  remove();
   const lebrons = lecards.filter((lecard) => lecard.name === "LeBron James");
   lebrons.forEach((lebron) => {
     event.preventDefault();
@@ -68,4 +70,8 @@ function injectCard(cardObject) {
   }
 
   console.log("Number of cards:", totalCards + 1);
+}
+
+function remove() {
+  document.querySelector(".card-container").innerHTML = "";
 }

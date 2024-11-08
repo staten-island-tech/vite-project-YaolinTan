@@ -1,5 +1,11 @@
 :root{
-    --h1: 5rem;
     --royalPurple: #A25DE4;
+    --white: 
+
+    --h1: 5rem;
+
+    --buttonHeight: 6rem;
+    --buttonWidth: 12rem;
+    --containerMarginTop: 5rem;
   }
   
