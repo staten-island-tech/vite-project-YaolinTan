@@ -195,6 +195,20 @@ const lecards = [
     birth_year: 2006,
     teamColors: ["#552582", "#FDB927"], // Los Angeles Lakers colors (purple & gold)
   },
+  {
+    name: "Bryce James",
+    draft_year: "TBD",
+    team: "Los Angeles Lakers",
+    year: 2028,
+    birthplace: "Cleveland, Ohio",
+    high_school: "Sierra Canyon High School",
+    college: "TBD",
+    image_url: "https://example.com/images/bryce_2028_new_card.jpg",
+    stats: "PPG: 20.3, RPG: 7.5, APG: 5.0, FG%: 46.5%, 3P%: 38.5%, FT%: 76.0%",
+    card_brand: "Topps",
+    birth_year: 2006,
+    teamColors: ["#552582", "#FDB927"], // Los Angeles Lakers colors (purple & gold)
+  },
 ];
 
 export { lecards };

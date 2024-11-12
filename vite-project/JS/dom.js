@@ -2,9 +2,9 @@ const DOMselectors = {
   lebronButton: document.querySelector(".lebronButton"),
   bronnyButton: document.querySelector(".bronnyButton"),
   bryceButton: document.querySelector(".bryceButton"),
-  highSchoolButtons: document.querySelector(".high-school-buttons"),
-  collegeButtons: document.querySelector(".college-buttons"),
-  nbaButtons: document.querySelector(".nba-buttons"),
+  highSchoolButton: document.querySelector(".highSchoolButton"),
+  collegeButton: document.querySelector(".collegeButton"),
+  nbaButton: document.querySelector(".nbaButton"),
 };
 
 export { DOMselectors };

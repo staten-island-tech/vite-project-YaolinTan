@@ -14,6 +14,69 @@ DOMselectors.lebronButton.addEventListener("click", function (event) {
   });
 });
 
+DOMselectors.bronnyButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  remove();
+  const bronnys = lecards.filter((lecard) => lecard.name === "Bronny James");
+  bronnys.forEach((bronny) => {
+    event.preventDefault();
+    let player = bronny;
+    const cardObject = createCardObject(player);
+    injectCard(cardObject);
+  });
+});
+
+DOMselectors.bryceButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  remove();
+  const bryces = lecards.filter((lecard) => lecard.name === "Bryce James");
+  bryces.forEach((bryce) => {
+    event.preventDefault();
+    let player = bryce;
+    const cardObject = createCardObject(player);
+    injectCard(cardObject);
+  });
+});
+
+DOMselectors.collegeButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  remove();
+  const colleges = lecards.filter(
+    (lecard) => lecard.college !== "None (NBA)" && lecard.college !== "TBD"
+  );
+  colleges.forEach((college) => {
+    event.preventDefault();
+    let player = college;
+    const cardObject = createCardObject(player);
+    injectCard(cardObject);
+  });
+});
+
+DOMselectors.highSchoolButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  remove();
+  const highSchools = lecards.filter(
+    (lecard) => lecard.high_school !== "undefined"
+  );
+  highSchools.forEach((highSchool) => {
+    event.preventDefault();
+    let player = highSchool;
+    const cardObject = createCardObject(player);
+    injectCard(cardObject);
+  });
+});
+
+DOMselectors.nbaButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  remove();
+  const nbas = lecards.filter((lecard) => lecard.draft_year !== "TBD");
+  nbas.forEach((nba) => {
+    event.preventDefault();
+    let player = nba;
+    const cardObject = createCardObject(player);
+    injectCard(cardObject);
+  });
+});
 function createCardObject(player) {
   return {
     name: player.name,
@@ -22,7 +85,7 @@ function createCardObject(player) {
     stats: player.stats,
     bPlace: player.birthplace,
     bYear: player.birthYear,
-    highSchool: player.highSchool_school,
+    highSchool: player.high_school,
     college: player.college,
     dYear: player.draft_Year,
     team: player.team,
@@ -50,7 +113,7 @@ function injectCard(cardObject) {
       `<div class="card" style="border: 4px solid ${
         cardObject.borderColor
       }; background-color: ${cardObject.backColor};">
-        h2 class="card-header">${cardObject.name}</h2>
+        <h2 class="card-header">${cardObject.name}</h2>
         <p class="card-year">Year: ${cardObject.year}</p>
         <p class="card-brand">Brand: ${cardObject.brand}</p>
         <p class="card-stats">Stats: ${cardObject.stats}</p>
