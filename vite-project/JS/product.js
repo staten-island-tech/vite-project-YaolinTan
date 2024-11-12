@@ -7,7 +7,8 @@ const lecards = [
     birthplace: "Akron, Ohio",
     high_school: "St. Vincent-St. Mary High School",
     college: "None (NBA)",
-    image_url: "https://example.com/images/lebron_2003_card.jpg",
+    image_url:
+      "https://th.bing.com/th/id/OIP.ZQGzyRdkpy55lt_5xAUlQgHaLE?w=122&h=183&c=7&r=0&o=5&pid=1.7",
     stats: "PPG: 20.9, RPG: 5.5, APG: 5.5, FG%: 43.8%, 3P%: 32.9%, FT%: 75.0%",
     card_brand: "Topps",
     birth_year: 1984,

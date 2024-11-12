@@ -2,6 +2,17 @@ import "../CSS/style.css";
 import { lecards } from "./product";
 import { DOMselectors } from "./dom";
 
+DOMselectors.lefamButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  remove();
+  lecards.forEach((lecard) => {
+    event.preventDefault();
+    let player = lecard;
+    const cardObject = createCardObject(player);
+    injectCard(cardObject);
+  });
+});
+
 DOMselectors.lebronButton.addEventListener("click", function (event) {
   event.preventDefault();
   remove();
@@ -77,6 +88,7 @@ DOMselectors.nbaButton.addEventListener("click", function (event) {
     injectCard(cardObject);
   });
 });
+
 function createCardObject(player) {
   return {
     name: player.name,
@@ -125,7 +137,7 @@ function injectCard(cardObject) {
         <p class="card-team">Team: ${cardObject.team}</p>
         ${
           cardObject.image
-            ? `<img src="${cardObject.image}" alt="${cardObject.text}"/>`
+            ? `<img src="${cardObject.image}" alt="${cardObject.text}"/ class="img">`
             : ""
         }
       </div>`
