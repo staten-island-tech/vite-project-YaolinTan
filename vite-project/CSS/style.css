@@ -23,6 +23,7 @@ h2{
 .button{
   height: var(--buttonHeight);
   width: var(--buttonWidth);
+  font-size: ;
 }
 #allButton{
   display: flex;
