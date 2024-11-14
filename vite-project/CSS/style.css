@@ -35,6 +35,7 @@ h2{
   margin-top: var(--containerMarginTop);
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 #lefamily{
   align-items: center;
@@ -42,12 +43,19 @@ h2{
   justify-content: center;
 }
 .img{
-  height: 80%;
+  height: 70%;
   width: 80%;
   background-color: black;
   background-clip: padding-box;
   border: .1rem solid red;
   padding: 1rem;
   margin-bottom: 1rem;
+}
+.card{
+  align-items: center;
+  text-align: center; 
+  box-sizing: content-box;
+  color:;
+  margin: 2rem;
 }
 
