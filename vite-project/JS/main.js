@@ -2,7 +2,6 @@ import "../CSS/style.css";
 import { lecards } from "./product";
 import { DOMselectors } from "./dom";
 
-// Generalized function for button click handling
 function handleButtonClick(filterCondition) {
   return function (event) {
     event.preventDefault();
@@ -15,7 +14,6 @@ function handleButtonClick(filterCondition) {
   };
 }
 
-// Event listeners for each button
 DOMselectors.lefamButton.addEventListener(
   "click",
   handleButtonClick(() => true)
@@ -47,7 +45,6 @@ DOMselectors.nbaButton.addEventListener(
   handleButtonClick((lecard) => lecard.draft_year !== "TBD")
 );
 
-// Function to create card objects
 function createCardObject(player) {
   return {
     name: player.name,
@@ -63,10 +60,10 @@ function createCardObject(player) {
     image: player.image_url,
     backColor: player.teamColors[0],
     borderColor: player.teamColors[1],
+    reference: player.reference_url,
   };
 }
 
-// Function to inject card into the DOM
 function injectCard(cardObject) {
   const allCards = document.querySelectorAll(".card-container .card");
   const totalCards = allCards.length;
@@ -83,7 +80,8 @@ function injectCard(cardObject) {
   if (cardContainer) {
     cardContainer.insertAdjacentHTML(
       "beforeend",
-      `<div class="card" style="border: 4px solid ${
+      `<form action="${cardObject.reference}">
+      <button class="card" style="border: 4px solid ${
         cardObject.borderColor
       }; background-color: ${cardObject.backColor};">
         <h2 class="card-header">${cardObject.name}</h2>
@@ -128,7 +126,8 @@ function injectCard(cardObject) {
             ? `<img src="${cardObject.image}" alt="${cardObject.name}" class="img">`
             : ""
         }
-      </div>`
+      </button>
+      </form>`
     );
   }
 

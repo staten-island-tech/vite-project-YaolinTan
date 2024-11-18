@@ -46,7 +46,7 @@ h2 {
   justify-content: center;
 }
 .img {
-  width: auto;
+  height: 30rem;
   max-width: 80%;
   background-color: black;
   background-clip: padding-box;
