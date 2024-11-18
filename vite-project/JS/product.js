@@ -22,7 +22,8 @@ const lecards = [
     birthplace: "Akron, Ohio",
     high_school: "St. Vincent-St. Mary High School",
     college: "None (NBA)",
-    image_url: "https://example.com/images/lebron_2010_card.jpg",
+    image_url:
+      "https://th.bing.com/th?id=ODL.92f700265c9645421ab7c70a0b9da235&w=195&h=300&c=10&rs=1&qlt=99&o=6&dpr=1.3&pid=23.1",
     stats: "PPG: 26.7, RPG: 6.3, APG: 7.0, FG%: 51.1%, 3P%: 34.0%, FT%: 75.6%",
     card_brand: "Panini",
     birth_year: 1984,
@@ -36,7 +37,8 @@ const lecards = [
     birthplace: "Akron, Ohio",
     high_school: "St. Vincent-St. Mary High School",
     college: "None (NBA)",
-    image_url: "https://example.com/images/lebron_2016_card.jpg",
+    image_url:
+      "https://th.bing.com/th/id/R.c170557a936a4fef610d852adb779db3?rik=D8%2fY40jObq4D5A&riu=http%3a%2f%2fwww4.pictures.zimbio.com%2fgi%2fLeBron%2bJames%2b2016%2bNBA%2bFinals%2bGame%2bSix%2bEb6GXjIwPjXl.jpg&ehk=4FG7kIkGBnMIyu3rITjzqi%2fAKXwn8H2aOEygALPPBI4%3d&risl=&pid=ImgRaw&r=0",
     stats: "PPG: 25.3, RPG: 7.4, APG: 6.8, FG%: 50.7%, 3P%: 34.5%, FT%: 73.6%",
     card_brand: "Upper Deck",
     birth_year: 1984,
@@ -50,7 +52,8 @@ const lecards = [
     birthplace: "Akron, Ohio",
     high_school: "St. Vincent-St. Mary High School",
     college: "None (NBA)",
-    image_url: "https://example.com/images/lebron_2020_card.jpg",
+    image_url:
+      "https://th.bing.com/th/id/OIP.r6oWsK_UFbRsgB3xHnvtSAAAAA?rs=1&pid=ImgDetMain",
     stats: "PPG: 25.3, RPG: 7.8, APG: 10.2, FG%: 49.7%, 3P%: 34.9%, FT%: 69.4%",
     card_brand: "Donruss",
     birth_year: 1984,
@@ -64,7 +67,7 @@ const lecards = [
     birthplace: "Akron, Ohio",
     high_school: "St. Vincent-St. Mary High School",
     college: "None (NBA)",
-    image_url: "https://example.com/images/lebron_2024_card.jpg",
+    image_url: "https://images.wsj.net/im-762053/?width=1278&size=1",
     stats: "PPG: 24.1, RPG: 8.5, APG: 9.1, FG%: 49.8%, 3P%: 30.0%, FT%: 75.9%",
     card_brand: "Panini",
     birth_year: 1984,
@@ -78,7 +81,8 @@ const lecards = [
     birthplace: "Cleveland, Ohio",
     high_school: "Sierra Canyon High School",
     college: "USC (2024)",
-    image_url: "https://example.com/images/bronny_2024_card.jpg",
+    image_url:
+      "https://th.bing.com/th/id/OIP.Eqe-E4hgF8N7-GZ1DnLWsAHaFQ?rs=1&pid=ImgDetMain://example.com/images/bronny_2024_card.jpg",
     stats: "PPG: 12.5, RPG: 4.0, APG: 3.0, FG%: 41.2%, 3P%: 35.8%, FT%: 72.0%",
     card_brand: "Topps",
     birth_year: 2004,
@@ -92,7 +96,8 @@ const lecards = [
     birthplace: "Cleveland, Ohio",
     high_school: "Sierra Canyon High School",
     college: "USC (2024)",
-    image_url: "https://example.com/images/bronny_2025_card.jpg",
+    image_url:
+      "https://examphttps://ng-sportingnews.com/s3/files/styles/twitter_card_120x120/s3/2024-06/Bronny-James-Lakers-Jersey-Swap-%28FTR%29.jpg?itok=U9-NFcC2le.com/images/bronny_2025_card.jpg",
     stats: "PPG: 14.0, RPG: 4.5, APG: 4.2, FG%: 43.5%, 3P%: 36.5%, FT%: 74.0%",
     card_brand: "Upper Deck",
     birth_year: 2004,
@@ -106,7 +111,8 @@ const lecards = [
     birthplace: "Cleveland, Ohio",
     high_school: "Sierra Canyon High School",
     college: "USC (2024)",
-    image_url: "https://example.com/images/bronny_2026_card.jpg",
+    image_url:
+      "https://example.cohttps://athlonsports.com/.image/t_share/MjA3NTc0NDcyMzM1NTY2NTMw/screenshot-2024-07-02-at-33839pm.jpgm/images/bronny_2026_card.jpg",
     stats: "PPG: 16.2, RPG: 5.0, APG: 5.5, FG%: 45.3%, 3P%: 38.0%, FT%: 75.0%",
     card_brand: "Donruss",
     birth_year: 2004,
@@ -120,7 +126,8 @@ const lecards = [
     birthplace: "Cleveland, Ohio",
     high_school: "Sierra Canyon High School",
     college: "USC (2024)",
-    image_url: "https://example.com/images/bronny_2027_card.jpg",
+    image_url:
+      "https://example.chttps://ng-sportingnews.com/s3/files/styles/twitter_card_120x120/s3/2024-07/Bronny%20James%20%283%29%20071224.jpeg?itok=Me7QVF5pom/images/bronny_2027_card.jpg",
     stats: "PPG: 18.1, RPG: 6.3, APG: 6.2, FG%: 46.8%, 3P%: 39.2%, FT%: 76.5%",
     card_brand: "Panini",
     birth_year: 2004,

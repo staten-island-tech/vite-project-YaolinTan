@@ -1,61 +1,89 @@
 @import "variable.css";
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 
 html,
 body,
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
 }
-body{
+body {
   background-color: var(--royalPurple);
 }
-h1{
+h1 {
   font-size: var(--h1);
   text-align: center;
   font-family: cursive;
+  font-style: italic;
 }
-h2{
+h2 {
   font-family: ;
 }
-.button{
+.button {
   height: var(--buttonHeight);
   width: var(--buttonWidth);
   font-size: var(--buttonFontSize);
+  border-radius: 2rem;
+  background-color: var(--gold);
 }
-#allButton{
+#allButton {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 1rem;
 }
-.card-container{
+.card-container {
   margin-top: var(--containerMarginTop);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-#lefamily{
+#lefamily {
   align-items: center;
   display: flex;
   justify-content: center;
 }
-.img{
-  height: 70%;
-  width: 80%;
+.img {
+  width: auto;
+  max-width: 80%;
   background-color: black;
   background-clip: padding-box;
-  border: .1rem solid red;
+  border: 0.1rem solid red;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
-.card{
+.card {
   align-items: center;
-  text-align: center; 
-  box-sizing: content-box;
-  color:;
+  text-align: center;
+  box-sizing: border-box;
+  color: var(--white);
   margin: 2rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  width: 30vw;
 }
-
+h2 {
+  font-size: 2rem;
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.card:hover {
+  transform: scale(1.2) translateY(-3rem);
+  transition: 0.5s;
+}
+.button:hover {
+  transform: scale(1.2) translateY(-3rem);
+  transition: 1s;
+  transform: scale(1.2) translateY(-3rem);
+}
+.container:hover .card:not(:hover) {
+  transition: 0.8s;
+  transform: scale(0.6);
+  transform-origin: 3rem;
+  opacity: 0.2;
+}

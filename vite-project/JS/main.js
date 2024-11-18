@@ -2,93 +2,52 @@ import "../CSS/style.css";
 import { lecards } from "./product";
 import { DOMselectors } from "./dom";
 
-DOMselectors.lefamButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  remove();
-  lecards.forEach((lecard) => {
+// Generalized function for button click handling
+function handleButtonClick(filterCondition) {
+  return function (event) {
     event.preventDefault();
-    let player = lecard;
-    const cardObject = createCardObject(player);
-    injectCard(cardObject);
-  });
-});
+    removeCards();
+    const filteredCards = lecards.filter(filterCondition);
+    filteredCards.forEach((filteredCard) => {
+      const cardObject = createCardObject(filteredCard);
+      injectCard(cardObject);
+    });
+  };
+}
 
-DOMselectors.lebronButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  remove();
-  const lebrons = lecards.filter((lecard) => lecard.name === "LeBron James");
-  lebrons.forEach((lebron) => {
-    event.preventDefault();
-    let player = lebron;
-    const cardObject = createCardObject(player);
-    injectCard(cardObject);
-  });
-});
-
-DOMselectors.bronnyButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  remove();
-  const bronnys = lecards.filter((lecard) => lecard.name === "Bronny James");
-  bronnys.forEach((bronny) => {
-    event.preventDefault();
-    let player = bronny;
-    const cardObject = createCardObject(player);
-    injectCard(cardObject);
-  });
-});
-
-DOMselectors.bryceButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  remove();
-  const bryces = lecards.filter((lecard) => lecard.name === "Bryce James");
-  bryces.forEach((bryce) => {
-    event.preventDefault();
-    let player = bryce;
-    const cardObject = createCardObject(player);
-    injectCard(cardObject);
-  });
-});
-
-DOMselectors.collegeButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  remove();
-  const colleges = lecards.filter(
+// Event listeners for each button
+DOMselectors.lefamButton.addEventListener(
+  "click",
+  handleButtonClick(() => true)
+);
+DOMselectors.lebronButton.addEventListener(
+  "click",
+  handleButtonClick((lecard) => lecard.name === "LeBron James")
+);
+DOMselectors.bronnyButton.addEventListener(
+  "click",
+  handleButtonClick((lecard) => lecard.name === "Bronny James")
+);
+DOMselectors.bryceButton.addEventListener(
+  "click",
+  handleButtonClick((lecard) => lecard.name === "Bryce James")
+);
+DOMselectors.collegeButton.addEventListener(
+  "click",
+  handleButtonClick(
     (lecard) => lecard.college !== "None (NBA)" && lecard.college !== "TBD"
-  );
-  colleges.forEach((college) => {
-    event.preventDefault();
-    let player = college;
-    const cardObject = createCardObject(player);
-    injectCard(cardObject);
-  });
-});
+  )
+);
+DOMselectors.highSchoolButton.addEventListener(
+  "click",
+  handleButtonClick((lecard) => lecard.high_school !== "undefined")
+);
+DOMselectors.nbaButton.addEventListener(
+  "click",
+  handleButtonClick((lecard) => lecard.draft_year !== "TBD")
+);
 
-DOMselectors.highSchoolButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  remove();
-  const highSchools = lecards.filter(
-    (lecard) => lecard.high_school !== "undefined"
-  );
-  highSchools.forEach((highSchool) => {
-    event.preventDefault();
-    let player = highSchool;
-    const cardObject = createCardObject(player);
-    injectCard(cardObject);
-  });
-});
-
-DOMselectors.nbaButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  remove();
-  const nbas = lecards.filter((lecard) => lecard.draft_year !== "TBD");
-  nbas.forEach((nba) => {
-    event.preventDefault();
-    let player = nba;
-    const cardObject = createCardObject(player);
-    injectCard(cardObject);
-  });
-});
-
+// Function to create card objects
 function createCardObject(player) {
   return {
     name: player.name,
@@ -107,10 +66,12 @@ function createCardObject(player) {
   };
 }
 
+// Function to inject card into the DOM
 function injectCard(cardObject) {
-  let cardContainer;
   const allCards = document.querySelectorAll(".card-container .card");
   const totalCards = allCards.length;
+  let cardContainer;
+
   if (totalCards < 5) {
     cardContainer = document.getElementById("cardContainer1");
   } else if (totalCards < 10) {
@@ -126,18 +87,45 @@ function injectCard(cardObject) {
         cardObject.borderColor
       }; background-color: ${cardObject.backColor};">
         <h2 class="card-header">${cardObject.name}</h2>
-        <p class="card-year">Year: ${cardObject.year}</p>
-        <p class="card-brand">Brand: ${cardObject.brand}</p>
-        <p class="card-stats">Stats: ${cardObject.stats}</p>
-        <p class="card-bPlace">Birthplace: ${cardObject.bPlace}</p>
-        <p class="card-bYear">Birth Year: ${cardObject.bYear}</p>
-        <p class="card-highSchool">High School: ${cardObject.highSchool}</p>
-        <p class="card-college">College: ${cardObject.college}</p>
-        <p class="card-dYear">Draft Year: ${cardObject.dYear}</p>
-        <p class="card-team">Team: ${cardObject.team}</p>
+        <div class="stats" id="cardYear">
+          <h3>Year:</h3>
+          <p class="stat">${cardObject.year}</p>
+        </div>
+        <div class="stats" id="cardBrand">
+          <h3>Brand:</h3>
+          <p class="stat">${cardObject.brand}</p>
+        </div>
+        <div class="stats" id="cardStats">
+          <h3>Stats:</h3>
+          <p class="stat">${cardObject.stats}</p>
+        </div>
+        <div class="stats" id="cardBPlace">
+          <h3>Birthplace:</h3>
+          <p class="stat">${cardObject.bPlace}</p>
+        </div>
+        <div class="stats" id="cardBYear">
+          <h3>Birth Year:</h3>
+          <p class="stat">${cardObject.bYear}</p>
+        </div>
+        <div class="stats" id="cardHighSchool">
+          <h3>High School:</h3>
+          <p class="stat">${cardObject.highSchool}</p>
+        </div>
+        <div class="stats" id="cardCollege">
+          <h3>College:</h3>
+          <p class="stat">${cardObject.college}</p>
+        </div>
+        <div class="stats" id="cardDYear">
+          <h3>Draft Year:</h3>
+          <p class="stat">${cardObject.dYear}</p>
+        </div>
+        <div class="stats" id="cardTeam">
+          <h3>Team:</h3>
+          <p class="stat">${cardObject.team}</p>
+        </div>
         ${
           cardObject.image
-            ? `<img src="${cardObject.image}" alt="${cardObject.text}"/ class="img">`
+            ? `<img src="${cardObject.image}" alt="${cardObject.name}" class="img">`
             : ""
         }
       </div>`
@@ -147,6 +135,9 @@ function injectCard(cardObject) {
   console.log("Number of cards:", totalCards + 1);
 }
 
-function remove() {
-  document.querySelector(".card-container").innerHTML = "";
+// Function to remove existing cards
+function removeCards() {
+  const cardContainers = document.querySelectorAll(".card-container");
+  cardContainers.forEach((container) => (container.innerHTML = ""));
+  console.log("Cards removed");
 }
