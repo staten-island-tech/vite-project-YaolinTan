@@ -30,20 +30,53 @@ DOMselectors.bryceButton.addEventListener(
   "click",
   handleButtonClick((lecard) => lecard.name === "Bryce James")
 );
-DOMselectors.collegeButton.addEventListener(
-  "click",
-  handleButtonClick(
-    (lecard) => lecard.college !== "None (NBA)" && lecard.college !== "TBD"
-  )
-);
-DOMselectors.highSchoolButton.addEventListener(
-  "click",
-  handleButtonClick((lecard) => lecard.high_school !== "undefined")
-);
-DOMselectors.nbaButton.addEventListener(
-  "click",
-  handleButtonClick((lecard) => lecard.draft_year !== "TBD")
-);
+DOMselectors.points.addEventListener("click", function (event) {
+  removeCards();
+  event.preventDefault();
+  const getPPG = (stats) => {
+    const ppgString = stats.match(/PPG: (\d+(\.\d+)?)/);
+    return ppgString ? parseFloat(ppgString[1]) : 0;
+  };
+  lecards.sort((a, b) => getPPG(b.stats) - getPPG(a.stats));
+  lecards.forEach((card) => {
+    const cardObject = createCardObject(card);
+    injectCard(cardObject);
+  });
+});
+DOMselectors.rebounds.addEventListener("click", function (event) {
+  removeCards();
+  event.preventDefault();
+  const getRPG = (stats) => {
+    const rpgString = stats.match(/RPG: (\d+(\.\d+)?)/);
+    return rpgString ? parseFloat(rpgString[1]) : 0;
+  };
+  lecards.sort((a, b) => getRPG(b.stats) - getRPG(a.stats));
+  lecards.forEach((card) => {
+    const cardObject = createCardObject(card);
+    injectCard(cardObject);
+  });
+});
+DOMselectors.assists.addEventListener("click", function (event) {
+  removeCards();
+  event.preventDefault();
+  const getAPG = (stats) => {
+    const apgString = stats.match(/APG: (\d+(\.\d+)?)/);
+    return apgString ? parseFloat(apgString[1]) : 0;
+  };
+  lecards.sort((a, b) => getAPG(b.stats) - getAPG(a.stats));
+  lecards.forEach((card) => {
+    const cardObject = createCardObject(card);
+    injectCard(cardObject);
+  });
+});
+
+const toggleButton = document.getElementById("theme-toggle");
+const body = document.body;
+
+toggleButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  body.classList.toggle("dark-mode");
+});
 
 function createCardObject(player) {
   return {
@@ -60,7 +93,7 @@ function createCardObject(player) {
     image: player.image_url,
     backColor: player.teamColors[0],
     borderColor: player.teamColors[1],
-    reference: player.reference_url,
+    reference: player.reference_link,
   };
 }
 

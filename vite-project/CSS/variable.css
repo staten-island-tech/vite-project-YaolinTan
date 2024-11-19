@@ -1,38 +1,43 @@
-:root{
-    --royalPurple: #A25DE4;
-    --white:#FFFFFF;
-    --gold:#ffd700;
-    --h1: 5rem;
-    --buttonHeight: 6rem;
-    --buttonWidth: 15vw;
-    --containerMarginTop: 5rem;
-  }
+:root {
+  --backgroundColor: #a25de4;
+  --textColor: #000000;
+  --white: #ffffff;
+  --gold: #ffd700;
+  --h1: 5rem;
+  --buttonHeight: 6rem;
+  --buttonWidth: 15vw;
+  --containerMarginTop: 5rem;
+}
+
+.dark-mode {
+  --backgroundColor: #661b1b;
+  --textColor: #ffffff;
+}
 @media (max-width: 1200px) {
-:root{
+  :root {
     --buttonFontSize: 2.5rem;
     --buttonWidth: 15vw;
-    } 
+  }
 }
 
 @media (max-width: 1024px) {
-  :root{
+  :root {
     --buttonFontSize: 2rem;
     --buttonWidth: 15vw;
     --flexDirection: column;
-    } 
-  }
-  @media (max-width: 768px) {
-    :root{
-      --buttonFontSize: 2rem;
-      --buttonWidth: 14vw;
-      --flexDirection: column;
   }
 }
-@media (max-width: 480px) {
-  :root{
+@media (max-width: 768px) {
+  :root {
     --buttonFontSize: 2rem;
     --buttonWidth: 14vw;
     --flexDirection: column;
+  }
 }
+@media (max-width: 480px) {
+  :root {
+    --buttonFontSize: 2rem;
+    --buttonWidth: 14vw;
+    --flexDirection: column;
+  }
 }
-  

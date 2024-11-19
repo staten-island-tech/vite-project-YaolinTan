@@ -13,6 +13,8 @@ const lecards = [
     card_brand: "Topps",
     birth_year: 1984,
     teamColors: ["#6A1E1F", "#FFC72C"], // Cleveland Cavaliers colors (maroon & gold)
+    reference_link:
+      "https://www.basketball-reference.com/players/j/jamesle01.html",
   },
   {
     name: "LeBron James",
@@ -28,6 +30,8 @@ const lecards = [
     card_brand: "Panini",
     birth_year: 1984,
     teamColors: ["#98002E", "#000000"], // Miami Heat colors (red & black)
+    reference_link:
+      "https://www.basketball-reference.com/players/j/jamesle01.html",
   },
   {
     name: "LeBron James",
@@ -43,6 +47,8 @@ const lecards = [
     card_brand: "Upper Deck",
     birth_year: 1984,
     teamColors: ["#6A1E1F", "#FFC72C"], // Cleveland Cavaliers colors (maroon & gold)
+    reference_link:
+      "https://www.basketball-reference.com/players/j/jamesle01.html",
   },
   {
     name: "LeBron James",
@@ -58,6 +64,8 @@ const lecards = [
     card_brand: "Donruss",
     birth_year: 1984,
     teamColors: ["#552582", "#FDB927"], // Los Angeles Lakers colors (purple & gold)
+    reference_link:
+      "https://www.basketball-reference.com/players/j/jamesle01.html",
   },
   {
     name: "LeBron James",
@@ -72,6 +80,8 @@ const lecards = [
     card_brand: "Panini",
     birth_year: 1984,
     teamColors: ["#552582", "#FDB927"], // Los Angeles Lakers colors (purple & gold)
+    reference_link:
+      "https://www.basketball-reference.com/players/j/jamesle01.html",
   },
   {
     name: "Bronny James",
@@ -87,6 +97,8 @@ const lecards = [
     card_brand: "Topps",
     birth_year: 2004,
     teamColors: ["#552582", "#FDB927"], // Los Angeles Lakers colors (purple & gold)
+    reference_link:
+      "https://www.basketball-reference.com/players/j/jamesbr02.html",
   },
   {
     name: "Bronny James",
@@ -102,6 +114,8 @@ const lecards = [
     card_brand: "Upper Deck",
     birth_year: 2004,
     teamColors: ["#552582", "#FDB927"], // Los Angeles Lakers colors (purple & gold)
+    reference_link:
+      "https://www.basketball-reference.com/players/j/jamesbr02.html",
   },
   {
     name: "Bronny James",
@@ -117,6 +131,8 @@ const lecards = [
     card_brand: "Donruss",
     birth_year: 2004,
     teamColors: ["#552582", "#FDB927"], // Los Angeles Lakers colors (purple & gold)
+    reference_link:
+      "https://www.basketball-reference.com/players/j/jamesbr02.html",
   },
   {
     name: "Bronny James",
@@ -132,6 +148,8 @@ const lecards = [
     card_brand: "Panini",
     birth_year: 2004,
     teamColors: ["#552582", "#FDB927"], // Los Angeles Lakers colors (purple & gold)
+    reference_link:
+      "https://www.basketball-reference.com/players/j/jamesbr02.html",
   },
   {
     name: "Bronny James",
@@ -147,6 +165,8 @@ const lecards = [
     card_brand: "Topps",
     birth_year: 2004,
     teamColors: ["#552582", "#FDB927"], // Los Angeles Lakers colors (purple & gold)
+    reference_link:
+      "https://www.basketball-reference.com/players/j/jamesbr02.html",
   },
   {
     name: "Bryce James",
@@ -156,11 +176,13 @@ const lecards = [
     birthplace: "Cleveland, Ohio",
     high_school: "Sierra Canyon High School",
     college: "TBD",
-    image_url: "",
+    image_url:
+      "https://staticc.sportskeeda.com/editor/2023/02/e8d31-16775797808659-1920.jpg",
     stats: "PPG: 10.8, RPG: 3.2, APG: 2.0, FG%: 41.4%, 3P%: 33.3%, FT%: 70.0%",
     card_brand: "Topps",
     birth_year: 2006,
     teamColors: ["#552582", "#FDB927"], // Los Angeles Lakers colors (purple & gold)
+    reference_link: "https://www.on3.com/db/bryce-james-157726/",
   },
   {
     name: "Bryce James",
@@ -170,11 +192,13 @@ const lecards = [
     birthplace: "Cleveland, Ohio",
     high_school: "Sierra Canyon High School",
     college: "TBD",
-    image_url: "",
+    image_url:
+      "https://www.gluwee.com/wp-content/uploads/2022/12/Bryce-James-758x421.jpg",
     stats: "PPG: 12.4, RPG: 4.1, APG: 2.5, FG%: 43.2%, 3P%: 35.6%, FT%: 72.3%",
     card_brand: "Upper Deck",
     birth_year: 2006,
     teamColors: ["#552582", "#FDB927"], // Los Angeles Lakers colors (purple & gold)
+    reference_link: "https://www.on3.com/db/bryce-james-157726/",
   },
   {
     name: "Bryce James",
@@ -184,11 +208,13 @@ const lecards = [
     birthplace: "Cleveland, Ohio",
     high_school: "Sierra Canyon High School",
     college: "TBD",
-    image_url: "https://example.com/images/bryce_2026_card.jpg",
+    image_url:
+      "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1688561889/wcmeenod5wjayhpbdowb.jpg",
     stats: "PPG: 14.1, RPG: 5.2, APG: 3.0, FG%: 44.5%, 3P%: 36.8%, FT%: 73.0%",
     card_brand: "Donruss",
     birth_year: 2006,
     teamColors: ["#552582", "#FDB927"], // Los Angeles Lakers colors (purple & gold)
+    reference_link: "https://www.on3.com/db/bryce-james-157726/",
   },
   {
     name: "Bryce James",
@@ -198,11 +224,13 @@ const lecards = [
     birthplace: "Cleveland, Ohio",
     high_school: "Sierra Canyon High School",
     college: "TBD",
-    image_url: "https://example.com/images/bryce_2027_card.jpg",
+    image_url:
+      "https://people.com/thmb/oKvKkuYjEQKOWfuNi4yNZ2jxvQw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(945x199:947x201)/Bryce-James-Hoophall-Classic-011623-38491b18764f49ee9d425aab2ea5a7a9.jpg",
     stats: "PPG: 18.5, RPG: 6.2, APG: 4.5, FG%: 45.3%, 3P%: 37.1%, FT%: 74.5%",
     card_brand: "Panini",
     birth_year: 2006,
     teamColors: ["#552582", "#FDB927"], // Los Angeles Lakers colors (purple & gold)
+    reference_link: "https://www.on3.com/db/bryce-james-157726/",
   },
   {
     name: "Bryce James",
@@ -212,11 +240,13 @@ const lecards = [
     birthplace: "Cleveland, Ohio",
     high_school: "Sierra Canyon High School",
     college: "TBD",
-    image_url: "https://example.com/images/bryce_2028_new_card.jpg",
+    image_url:
+      "https://lh3.googleusercontent.com/1J-qQe3Dffp77PDxKwK7CO8HS2DkBKOz8f27RY0dd5feeYONCjlPeua1dmJRZETazvxqGH-QKiY4SjOUVkOOzyVR_GxRjbA8PRi7iw9ipRQbKNeubYnU1L1sX-QvgVsbaYgdvwKcDs6CzNr1e51BYJs",
     stats: "PPG: 20.3, RPG: 7.5, APG: 5.0, FG%: 46.5%, 3P%: 38.5%, FT%: 76.0%",
     card_brand: "Topps",
     birth_year: 2006,
     teamColors: ["#552582", "#FDB927"], // Los Angeles Lakers colors (purple & gold)
+    reference_link: "https://www.on3.com/db/bryce-james-157726/",
   },
 ];
 
