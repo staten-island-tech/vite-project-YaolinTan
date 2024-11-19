@@ -5,39 +5,11 @@
   --gold: #ffd700;
   --h1: 5rem;
   --buttonHeight: 6rem;
-  --buttonWidth: 15vw;
+  --buttonWidth: 16vw;
   --containerMarginTop: 5rem;
 }
 
 .dark-mode {
   --backgroundColor: #661b1b;
   --textColor: #ffffff;
-}
-@media (max-width: 1200px) {
-  :root {
-    --buttonFontSize: 2.5rem;
-    --buttonWidth: 15vw;
-  }
-}
-
-@media (max-width: 1024px) {
-  :root {
-    --buttonFontSize: 2rem;
-    --buttonWidth: 15vw;
-    --flexDirection: column;
-  }
-}
-@media (max-width: 768px) {
-  :root {
-    --buttonFontSize: 2rem;
-    --buttonWidth: 14vw;
-    --flexDirection: column;
-  }
-}
-@media (max-width: 480px) {
-  :root {
-    --buttonFontSize: 2rem;
-    --buttonWidth: 14vw;
-    --flexDirection: column;
-  }
 }
