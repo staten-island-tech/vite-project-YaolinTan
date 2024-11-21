@@ -1,6 +1,6 @@
 import "../CSS/style.css";
 import { lecards } from "./product";
-import { DOMselectors } from "./dom";
+import { DOMselectors } from "./DOM.JS";
 
 function handleButtonClick(filterCondition) {
   return function (event) {
