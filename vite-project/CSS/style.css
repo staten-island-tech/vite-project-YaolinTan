@@ -14,7 +14,7 @@ body {
   color: var(--textColor);
 }
 h1 {
-  font-size: var(--h1);
+  font-size: 5rem;
   text-align: center;
   font-family: cursive;
   font-style: italic;
@@ -23,11 +23,11 @@ h2 {
   font-family: ;
 }
 .button {
-  height: var(--buttonHeight);
-  width: var(--buttonWidth);
-  font-size: var(--buttonFontSize);
+  height: 6rem;
+  width: 16vw;
+  font-size: 1rem;
   border-radius: 2rem;
-  background-color: var(--gold);
+  background-color: gold;
 }
 .button1 {
   margin-left: 1rem;
@@ -42,7 +42,7 @@ h2 {
   margin-top: 1rem;
 }
 .card-container {
-  margin-top: var(--containerMarginTop);
+  margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
